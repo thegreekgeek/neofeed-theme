@@ -1,4 +1,5 @@
 {{ define "feed" }}
+{{ $publishStatus := index .Params "mf-post-status" }}
 <!-- any list of entries page -->
 <ul id="feed__ul" class="h-feed">
   {{ range .Pages }}
