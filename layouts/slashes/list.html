@@ -1,0 +1,8 @@
+{{ define "slashes" }}
+<!-- any list of entries page -->
+<ul id="slashes__ul" class="h-feed">
+  {{ range .Pages }} {{ partial "slashli" . }} {{ end }}
+</ul>
+{{ end }} {{ define "footer" }}
+<footer>{{ partial "pagination" . }}</footer>
+{{ end }}
