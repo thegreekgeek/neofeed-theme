@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{- partial "head" . -}}
+  <body>
+    {{- partial "header" . -}} {{- block "main" . }}
+    <main aria-role="main">
+      <section>
+        <hr />
+        {{- block "slashes" . }}{{- end }} {{- block "footer" . }} {{- end }}
+      </section>
+    </main>
+    {{- end }}
+  </body>
+</html>
